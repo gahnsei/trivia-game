@@ -1,13 +1,120 @@
-body {
+* {
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  min-height: 100vh;
+  background-color: #4183f1;
+}
+
+.homepage {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.quiz-start-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  font-family: 'Inter', sans-serif;
+}
+
+.quiz-start-title {
+  font-family: 'Karla', sans-serif;
+  font-size: 4rem;
+}
+
+.quiz-start-description {
+  margin-bottom: 2em;
+  font-size: 1rem;
+}
+
+.quiz-start-button {
+  padding: .6em 1em;
+  font-size: 1.5rem;
+  background-color: white;
+  border: none;
+  border-radius: 1em;
+  font-family: 'Inter';
+  font-weight: 600;
+  color: #4183f1;
+  cursor: pointer;
+  box-shadow: 0em .3em .3em rgba(0, 0, 0, 0.184);
+}
+
+.quiz-container{
+  padding: 4em 7em;
+  padding-bottom: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.question-container{
+  padding-bottom: 1.5em;
+  border-bottom: .05em solid rgba(255, 255, 255, 0.523);
+  margin-bottom: 1.5em;
+  width: 100%;
+  max-width: 50em;
+}
+
+.question {
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+}
+
+.answers {
+  margin-top: 1.5em;
+  margin-right: 1em;
+  padding: .5em 1em;
+  background-color: transparent;
+  color: white;
+  border: .15em solid white;
+  border-radius: 1em;
+}
+
+.selected-answer {
+  background-color: white !important;
+  color: #4183f1 !important;
+}
+
+.submit-button {
+  padding: .6em 1em;
+  font-size: 1.5rem;
+  background-color: white;
+  border: none;
+  border-radius: 1em;
+  font-family: 'Inter';
+  font-weight: 600;
+  color: #4183f1;
+  cursor: pointer;
+  box-shadow: 0em .3em .3em rgba(0, 0, 0, 0.184);
+}
+
+.correct-answer {
+  background-color: #94D7A2;
+  border: .15em solid #94D7A2;
+  border-radius: 1em;
+}
+
+.incorrect-answer {
+  background-color: #ff7878;
+  border: .15em solid #ff7878;
+  border-radius: 1em;
+}
+
+.quiz-score {
+  margin-bottom: 1em;
+  font-size: 1.25rem;
+  font-family: 'Karla', sans-serif;
+  font-weight: 600;
+  color: white;
+  text-align: center;
 }
